@@ -31,18 +31,18 @@ CREATE TABLE Students(
 INSERT INTO Students 
 (rollNo, name, age, grade) 
 VALUES 
-(1, 'Daksh',20,'C');
+(1, 'Bhawna',20,'C');
 
 SET SQL_SAFE_UPDATES = 0;
 
 UPDATE Students
 SET Grade = 'A'
-WHERE name = 'Daksh';
+WHERE name = 'Bhawna';
 
 DELETE from Students
 WHERE grade='A'
 
-3)CREATE USER 'User2'@'localhost' IDENTIFIED BY 'daksh';
+3)CREATE USER 'User2'@'localhost' IDENTIFIED BY 'bhawna';
 GRANT SELECT, INSERT ON school.students TO 'User2'@'localhost';
 
 4)START TRANSACTION;
